@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Your custom theme */
+  --color-primary: #0587e5;
+  --color-secondary: #f6f6f6;
+  --color-danger: #fa4d4d;
+  --color-success: #009029;
+  --color-warning: #ff9635;
+  --color-info: #ffc804;
+  --color-black: #000000;
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-secondary font-inter font-normal text-black;
+  }
+
+  h1 {
+    @apply mx-auto max-w-4xl text-center text-5xl leading-tight font-bold tracking-[-1%] text-white sm:text-[64px] sm:leading-[76px];
+  }
+}
