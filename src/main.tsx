@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import './index.css'
 import App from './App.tsx'
 import Home from "./pages/Home.tsx";
+import DashboardLayout from "./layouts/DashboardLayout.tsx";
+import Dashboard from "./pages/Dashboard.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -13,11 +15,11 @@ createRoot(document.getElementById('root')!).render(
           {/* renders into the outlet in <App> at "/" */}
           <Route index element={<Home />} />
 
-          {/*<Route path="dashboard" element={<Dashboard />}>*/}
-          {/*  /!* renders into the outlet in <Dashboard> at "/dashboard" *!/*/}
-          {/*  <Route index element={<DashboardHome />} />*/}
-          {/*  <Route path="settings" element={<Settings />} />*/}
-          {/*</Route>*/}
+          <Route path="dashboard">
+            <Route element={<DashboardLayout />}>
+              <Route path=":cid" element={<Dashboard />} />
+            </Route>
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>

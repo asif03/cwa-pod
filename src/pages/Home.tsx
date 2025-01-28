@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="flex flex-col gap-5">
       <Header />
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-5">
         <CompanyList companies={companies} />
       </div>
     </div>
