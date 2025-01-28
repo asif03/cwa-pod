@@ -1,13 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
-import './index.css'
-import App from './App.tsx'
+import "./index.css";
+import App from "./App.tsx";
 import Home from "./pages/Home.tsx";
 import DashboardLayout from "./layouts/DashboardLayout.tsx";
-import Dashboard from "./pages/Dashboard.tsx";
+import Products from "./pages/Products.tsx";
+import Orders from "./pages/Orders.tsx";
+import Settings from "./pages/Settings.tsx";
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
@@ -17,11 +19,13 @@ createRoot(document.getElementById('root')!).render(
 
           <Route path="dashboard">
             <Route element={<DashboardLayout />}>
-              <Route path=":cid" element={<Dashboard />} />
+              <Route path=":cid/products" element={<Products />} />
+              <Route path=":cid/orders" element={<Orders />} />
+              <Route path=":cid/settings" element={<Settings />} />
             </Route>
           </Route>
         </Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>,
-)
+);

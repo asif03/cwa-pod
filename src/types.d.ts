@@ -1,3 +1,9 @@
+interface INavItem {
+  id: number;
+  title: string;
+  url: (cid: number) => string;
+}
+
 interface ICompany {
   id: number;
   companyName: string;
