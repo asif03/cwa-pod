@@ -1,0 +1,57 @@
+export const connectedCompanySample = [
+  {
+    id: 1,
+    companyName: 'Printful',
+    description: 'Setup your Printful account with PODbazi: Tshirt Product Designer App.',
+    logo: '../company/printful.png',
+    isConnected: true,
+  },
+  {
+    id: 2,
+    companyName: 'Printful',
+    description: 'Setup your Printful account with PODbazi: Tshirt Product Designer App.',
+    logo: '../company/printify.png',
+    isConnected: true,
+  },
+  {
+    id: 3,
+    companyName: 'Printful',
+    description: 'Setup your Printful account with PODbazi: Tshirt Product Designer App.',
+    logo: '../company/printful.png',
+    isConnected: true,
+  },
+  {
+    id: 5,
+    companyName: 'Printful',
+    description: 'Setup your Printful account with PODbazi: Tshirt Product Designer App. Setup your Printful account with PODbazi: Tshirt Product Designer App. Setup your Printful account with PODbazi: Tshirt Product Designer App.',
+    logo: '../company/printful.png',
+    isConnected: true,
+  },
+  {
+    id: 6,
+    companyName: 'Printful',
+    description: 'Setup your Printful account with PODbazi: Tshirt Product Designer App.',
+    logo: '../company/printful.png',
+    isConnected: true,
+  },
+  {
+    id: 7,
+    companyName: 'Printful',
+    description: 'Setup your Printful account with PODbazi: Tshirt Product Designer App.',
+    logo: '../company/printful.png',
+    isConnected: true,
+  },{
+    id: 8,
+    companyName: 'Printful',
+    description: 'Setup your Printful account with PODbazi: Tshirt Product Designer App.',
+    logo: '../company/printful.png',
+    isConnected: true,
+  },
+  {
+    id: 9,
+    companyName: 'Printful',
+    description: 'Setup your Printful account with PODbazi: Tshirt Product Designer App.',
+    logo: '../company/printful.png',
+    isConnected: true,
+  },
+];
