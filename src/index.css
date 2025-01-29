@@ -10,6 +10,7 @@
   --color-warning: #ff9635;
   --color-info: #ffc804;
   --color-black: #000000;
+  --color-badge: #ffe99b;
   --font-inter: "Inter", sans-serif;
   --border: 1px;
 }
@@ -28,15 +29,52 @@
 
 @layer components {
   .sub-title {
-    @apply font-inter font-normal text-white text-lg;
+    @apply font-inter text-lg font-normal text-white;
   }
   .btn {
-    @apply px-5 py-2 text-sm font-bold text-white font-inter rounded-sm;
+    @apply font-inter rounded-sm px-5 py-2 text-sm font-bold text-white;
+  }
+
+  .badge {
+    @apply bg-badge inline-flex items-center rounded-sm px-3 py-2 text-xs font-bold text-black;
+  }
+
+  table {
+    @apply text-sm;
+    & thead {
+      @apply bg-[#DEE1E8] py-5 text-left font-bold;
+
+      & th {
+        @apply px-2 text-left;
+      }
+
+      & th.leftrow {
+        @apply rounded-tl-sm rounded-bl-sm px-4 py-2;
+      }
+
+      & th.rightrow {
+        @apply rounded-tr-sm rounded-br-sm py-2;
+      }
+    }
+
+    & tbody {
+      & tr {
+        @apply border-b-1 border-[#DEE1E8];
+
+        & td {
+          @apply py-2;
+        }
+
+        & td.inner {
+          @apply px-2;
+        }
+      }
+    }
   }
 }
 
 @layer utilities {
   .border {
-    @apply border rounded-lg border-[#DEE1E8]
+    @apply rounded-sm border border-[#DEE1E8];
   }
 }
