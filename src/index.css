@@ -21,12 +21,17 @@
   h3 {
     @apply max-w-4xl text-start text-[32px] leading-tight font-bold text-white;
   }
-
+  h4 {
+    @apply text-[16px] leading-tight font-bold;
+  }
 }
 
 @layer components {
   .sub-title {
     @apply font-inter font-normal text-white text-lg;
+  }
+  .btn {
+    @apply px-5 py-2 text-sm font-bold text-white font-inter rounded-sm;
   }
 }
 
