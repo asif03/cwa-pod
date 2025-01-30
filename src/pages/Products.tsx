@@ -11,17 +11,17 @@ const Products = () => {
         <h4>Imported Product from Printify</h4>
         <div className="flex flex-row items-center justify-end gap-5">
           <Search />
-          <Link to="" className="btn bg-primary">
+          <Link to={`/dashboard/1/products/new`} className="btn bg-primary">
             Add Product
           </Link>
         </div>
       </div>
-      <div>
+      <div className="overflow-x-scroll pb-5 lg:overflow-hidden lg:pb-0">
         <table className="w-full table-auto">
           <thead>
             <tr>
               <th className="leftrow w-12">Image</th>
-              <th>Product Title</th>
+              <th className="min-w-60">Product Title</th>
               <th>Print Area</th>
               <th className="rightrow"></th>
             </tr>

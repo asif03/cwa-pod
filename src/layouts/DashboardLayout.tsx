@@ -8,7 +8,7 @@ const DashboardLayout = () => {
     <div className="flex flex-col gap-5">
       <Navbar companyId={cid} />
 
-      <div className="flex flex-1 flex-col border bg-white p-5 drop-shadow-sm">
+      <div className="flex w-full flex-1 flex-col border bg-white p-5 drop-shadow-sm">
         <Outlet />
       </div>
     </div>

@@ -8,6 +8,8 @@ import DashboardLayout from "./layouts/DashboardLayout.tsx";
 import Products from "./pages/Products.tsx";
 import Orders from "./pages/Orders.tsx";
 import Settings from "./pages/Settings.tsx";
+import NewProducts from "./pages/NewProducts.tsx";
+import AddProduct from "./components/AddProduct.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -20,6 +22,8 @@ createRoot(document.getElementById("root")!).render(
           <Route path="dashboard">
             <Route element={<DashboardLayout />}>
               <Route path=":cid/products" element={<Products />} />
+              <Route path=":cid/products/new" element={<NewProducts />} />
+              <Route path=":cid/products/add" element={<AddProduct />} />
               <Route path=":cid/orders" element={<Orders />} />
               <Route path=":cid/settings" element={<Settings />} />
             </Route>

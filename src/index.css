@@ -20,7 +20,7 @@
     @apply bg-secondary font-inter font-normal text-black;
   }
   h3 {
-    @apply max-w-4xl text-start text-[32px] leading-tight font-bold text-white;
+    @apply max-w-4xl text-start lg:text-[32px] text-[24px] leading-tight font-bold text-white;
   }
   h4 {
     @apply text-[16px] leading-tight font-bold;
