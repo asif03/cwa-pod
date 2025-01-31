@@ -1,16 +1,18 @@
-import { Outlet, useParams } from "react-router";
+import { Outlet, useMatch, useParams } from "react-router";
 import Navbar from "../components/Navbar";
 
 const DashboardLayout = () => {
   const { cid } = useParams();
 
+  //const isPathMatched = useMatch(`/dashboard/${cid}/products/add`);
+
   return (
     <div className="flex flex-col gap-5">
       <Navbar companyId={cid} />
 
-      <div className="flex w-full flex-1 flex-col border bg-white p-5 drop-shadow-sm">
-        <Outlet />
-      </div>
+      <Outlet />
+
+      {/*isPathMatched && <div className="bg-[#FAEAA1]">Asif</div>*/}
     </div>
   );
 };

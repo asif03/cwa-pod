@@ -2,3 +2,18 @@
   margin: 0 auto;
   padding: 1rem;
 }
+
+.img-showcase {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.img-showcase img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-btn.active {
+  background-color: blue;
+  color: white;
+}

@@ -4,10 +4,10 @@ const Search = () => {
   return (
     <div className="relative items-center justify-end">
       <button
-        className="absolute right-1 flex cursor-pointer items-center justify-center border-l-1 border-[#DEE1E8] px-2 py-2 pt-3.5"
+        className="absolute right-1 cursor-pointer border-l-1 border-[#DEE1E8] px-2 py-2 pt-3.5"
         type="button"
       >
-        <img src={searchIcon} alt="Button Search" className="" />
+        <img src={searchIcon} alt="Button Search" className="h-5 w-5" />
       </button>
       <input
         type="text"

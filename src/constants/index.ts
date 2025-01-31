@@ -16,6 +16,10 @@ export const navMenu = [
   },
 ];
 
+export const colors = ["White", "Black", "Red", "Blue", "Green"];
+export const sizes = ["XS", "S", "M", "L", "XL"];
+export const printedAreas = ["Front", "Back", "Left", "Right"];
+
 export const connectedCompanySample = [
   {
     id: 1,
