@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Pagination from "../components/Pagination";
 
 const Orders = () => {
@@ -56,7 +57,11 @@ const Orders = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td className="font-bold">#PF110666593</td>
+                  <td className="font-bold">
+                    <Link to={`/dashboard/1/orders/PF110666593`}>
+                      #PF110666593
+                    </Link>
+                  </td>
                   <td>
                     <span className="badge rounded-full font-normal text-white">
                       Waiting
@@ -67,7 +72,11 @@ const Orders = () => {
                   <td className="font-bold">$1000.00</td>
                 </tr>
                 <tr>
-                  <td className="font-bold">#PF110666593</td>
+                  <td className="font-bold">
+                    <Link to={`/dashboard/1/orders/PF110666593`}>
+                      #PF110666593
+                    </Link>
+                  </td>
                   <td>
                     <span className="badge rounded-full font-normal text-white">
                       Waiting

@@ -1,4 +1,4 @@
-import { Outlet, useMatch, useParams } from "react-router";
+import { Outlet, useParams } from "react-router";
 import Navbar from "../components/Navbar";
 
 const DashboardLayout = () => {

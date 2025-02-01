@@ -1,6 +1,6 @@
 import { useState } from "react";
 import flag from "../assets/icons/flag.svg";
-import { color, colors, printedAreas, sizes } from "../constants";
+import { colors, printedAreas, sizes } from "../constants";
 import MultiSelectButtons from "./MultiSelectButtons";
 import ProductShowCase from "./ProductShowCase";
 

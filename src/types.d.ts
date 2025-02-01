@@ -11,3 +11,9 @@ interface ICompany {
   logo: string;
   isConnected: boolean;
 }
+
+interface INavMenu {
+  id: number;
+  title: string;
+  url: (cid: number) => string;
+}

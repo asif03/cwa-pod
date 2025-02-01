@@ -10,6 +10,7 @@ import Orders from "./pages/Orders.tsx";
 import Settings from "./pages/Settings.tsx";
 import NewProducts from "./pages/NewProducts.tsx";
 import AddProduct from "./components/AddProduct.tsx";
+import OrderDetails from "./pages/OrderDetails.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -25,6 +26,7 @@ createRoot(document.getElementById("root")!).render(
               <Route path=":cid/products/new" element={<NewProducts />} />
               <Route path=":cid/products/add" element={<AddProduct />} />
               <Route path=":cid/orders" element={<Orders />} />
+              <Route path=":cid/orders/:oid" element={<OrderDetails />} />
               <Route path=":cid/settings" element={<Settings />} />
             </Route>
           </Route>

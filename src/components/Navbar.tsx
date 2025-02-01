@@ -3,7 +3,7 @@ import { navMenu } from "../constants";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
-const Navbar = ({ companyId }: { companyId: number }) => {
+const Navbar = ({ companyId }: { companyId: string }) => {
   // State to manage the navbar's visibility
   const [toggleMenu, setToggleMenu] = useState(false);
 
