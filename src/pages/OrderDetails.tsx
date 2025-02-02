@@ -1,4 +1,5 @@
 import { ChevronDownIcon, SquareArrowOutUpRight } from "lucide-react";
+import productImg from "/images/front-tshirt.png";
 
 const OrderDetails = () => {
   return (
@@ -61,6 +62,60 @@ const OrderDetails = () => {
             <SquareArrowOutUpRight />
             Printfull Dashboard
           </button>
+        </div>
+      </div>
+      <div className="flex w-full flex-1 flex-col rounded-xl bg-white p-5 drop-shadow-xl">
+        <h4>Products</h4>
+        <div className="overflow-x-scroll rounded-xl border lg:overflow-hidden">
+          <table className="w-full table-auto">
+            <tbody>
+              <tr>
+                <td>
+                  <div className="border p-4">
+                    <img
+                      src={productImg}
+                      alt="Product Image"
+                      width={60}
+                      height={60}
+                    />
+                  </div>
+                </td>
+                <td className="p-4">
+                  <div className="flex flex-col gap-2">
+                    <p className="font-bold">
+                      Product Long Title To Test Long Title in the Product List
+                      Table
+                    </p>
+                    <div className="flex flex-row items-center justify-start gap-2">
+                      <span className="badge">Front</span>
+                      <span className="badge">Back</span>
+                      <span className="badge">Left</span>
+                      <span className="badge">Right</span>
+                    </div>
+                  </div>
+                </td>
+                <td>Sep 25 2024 10:51am</td>
+                <td>Mr. John Doe</td>
+                <td className="font-bold">$1000.00</td>
+              </tr>
+              <tr>
+                <td className="w-16">
+                  <div className="border p-4">
+                    <img
+                      src={productImg}
+                      alt="Product Image"
+                      width={60}
+                      height={60}
+                    />
+                  </div>
+                </td>
+                <td></td>
+                <td>Sep 25 2024 10:51am</td>
+                <td>Mr. John Doe</td>
+                <td className="font-bold">$1000.00</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
